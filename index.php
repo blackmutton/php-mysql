@@ -71,7 +71,7 @@ foreach($rows as $row){
     echo "<td>{$row['graduate_at']}</td>";
     echo "<td>{$row['status_code']}</td>";
     echo "<td>";
-    echo "<a href='' style='margin:0 5px'>編輯</a>";
+    echo "<a href='edit.php?id={$row['id']}' style='margin:0 5px'>編輯</a>";
     echo "<a href='delete.php?id={$row['id']}' style='margin:0 5px;color:red;'>刪除</a>";
     echo "</td>";
     echo "</tr>";
