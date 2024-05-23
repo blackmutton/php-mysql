@@ -1,3 +1,16 @@
+<style>
+    table{
+        border-collapse:collapse;
+        margin:auto;
+        margin-bottom:5px;
+    }
+    tr,td{
+        border:1px black solid;
+    }
+</style>
+
+<a href="insert.php">新增學員</a>
+
 <?php
 $dsn="mysql:host=localhost;charset=utf8;dbname=school";
 $pdo=new PDO($dsn, 'root','');
@@ -20,16 +33,6 @@ echo "</pre>"; */
 
 ?>
 <!-- 陣列轉表格 -->
-<style>
-    table{
-        border-collapse:collapse;
-        margin:auto;
-        margin-bottom:5px;
-    }
-    tr,td{
-        border:1px black solid;
-    }
-</style>
 
 <!-- 方法一 -->
 <table>
