@@ -1,6 +1,19 @@
 <?php
 $dsn="mysql:host=localhost;charset=utf8;dbname=school";
 $pdo= new PDO($dsn,'root','');
+/* echo "<pre>";
+print_r($_POST);
+echo "</pre>"; */ 
+
+foreach($_POST as $i=>$item){
+    echo $i.'->'.$item;
+    echo "<br>";
+    if($item == null|| $item ==''){
+        echo "空值";
+        header("location:insert.php?error=欄位不可為空");
+        exit();
+    }
+}
 
 $sql="insert into students(`school_num`,`name`,`birthday`,`uni_id`,`addr`,`parents`,`tel`,`dept`,`graduate_at`,`status_code`) 
 value('{$_POST['school_num']}', 

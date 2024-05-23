@@ -11,6 +11,13 @@ $pdo= new PDO($dsn,'root','');
 </head>
 <body>
     <h1>新增學員</h1>
+    <?php
+    if(isset($_GET['error'])){
+        echo "<span style='color:red'>";
+        echo $_GET['error'];
+        echo "</span>";
+    }
+    ?>
     <form action="save.php" method="post">
         <div>
             
