@@ -10,7 +10,7 @@
     <form action="save.php" method="post">
         <div>
             
-            <label for="school_num">學號:</label><input type="text" name="school_num" id="school_num">
+            <label for="school_num">學號:</label><input type="number" min="1" name="school_num" id="school_num">
         </div>
         <div>
             
@@ -38,7 +38,15 @@
         </div>
         <div>
             
-            <label for="dept">科系:</label><input type="text" name="dept" id="dept">
+            <label for="dept">科系:</label>
+            <select name="dept" id="dept">
+                <option value="1">商業經營科</option>
+                <option value="2">國際貿易科</option>
+                <option value="3">資料處理科</option>
+                <option value="4">幼兒保育科</option>
+                <option value="5">美容科</option>
+                <option value="6">室內布置科</option>
+            </select>
         </div>
         <div>
             
@@ -46,7 +54,13 @@
         </div>
         <div>
             
-            <label for="status_code">畢業狀態:</label><input type="text" name="status_code" id="status_code">
+            <label for="status_code">畢業狀態:</label>
+            <select name="status_code" id="status_code">
+                <option value="1">畢業</option>
+                <option value="2">補校</option>
+                <option value="3">補結</option>
+                <option value="4">結業</option>
+            </select>
         </div>
         <input type="submit" value="新增"><input type="reset" value="重置">
     </form>
