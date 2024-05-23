@@ -48,7 +48,7 @@
             
             <label for="status_code">畢業狀態:</label><input type="text" name="status_code" id="status_code">
         </div>
-        
+        <input type="submit" value="新增"><input type="reset" value="重置">
     </form>
 </body>
 </html>
